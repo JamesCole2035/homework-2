@@ -1,0 +1,34 @@
+{
+  "name": "lesson7-homework",
+  "version": "0.0.1",
+  "description": "example of the use of grunt and gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesCole2035/lesson7-homework.git"
+  },
+  "keywords": [
+    "gulp",
+    "grunt",
+    "js",
+    "html",
+    "sass"
+  ],
+  "author": "Mikhail Bochkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesCole2035/lesson7-homework/issues"
+  },
+  "homepage": "https://github.com/JamesCole2035/lesson7-homework#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1"
+  }
+}
