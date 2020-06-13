@@ -1,0 +1,221 @@
+$mainColor: #222222
+$darkgreyOne: #666666
+$darkgreyTwo: #C4C4C4
+$grey: #DDDDDD
+$white: #FFFFFF
+$lightgrey: #F2F2F2
+$active: #FFCC66
+$picked: #FFDD99
+$hover: #FFEECC
+$activeIcons: #FFE258
+$success: #6CD858
+$error: #FF533D
+$buttonWidthFor1366: 90px
+$buttonWidthFor1920: 102px
+$buttonHeightFor1366: 38px
+$buttonHeightFor1920: 44px
+$mainFontSize: 14px
+$bigFontSize: 20px
+*
+	font-family: Montserrat
+.button
+	font-size: 14px
+	line-height: 14px
+@mixin Button($backColor, $font)
+	padding: 12px 20px
+	border-width: 2px
+	border-style: solid
+	border-color: $backColor
+	background-color: $backColor
+	font-size: $font
+//стили для 1366
+.button_acc
+	@include Button($active, 14px)
+.button_acc:hover
+	@include Button($hover, 14px)
+.button_acc:disable
+	@include Button($picked, 14px)
+.button_alt
+	@include Button($white, 14px)
+	border-color: $active
+.button_alt:hover
+	@include Button($hover, 14px)
+	border-color: $active
+.button_alt:disable
+	@include Button($white, 14px)
+	border-color: $picked
+.button_ghost
+	@include Button(none, 14px)
+.button_sec
+	@include Button($darkgreyTwo, 14px)
+.button_sec:hover
+	@include Button(n$lightgrey, 14px)
+.button_sec:disable
+	@include Button( $darkgreyOne, 14px)
+.button_withicon
+	@include Button($active, 14px)
+@mixin Link($size, $lineHeight)
+	color: $mainColor
+	font-size: $size
+	line-height: $lineHeight
+	text-decoration: none
+	letter-spacing: -0.02em;	
+.link, .link:visited
+	@include Link($size: 14px, $lineHeight: 18px)	
+.link:hover
+	text-decoration: underline
+.link_big, .link_big:visited
+	@include Link($size: 24px, $lineHeight: 32px)	
+.link_big:hover
+	text-decoration: underline
+@mixin PageTitle
+	font-size: 20px
+	line-height: 20px
+	line-height: 83%
+	text-transform: uppercase
+.page-title
+	@include PageTitle
+	font-weight: 600
+.page-subtitle
+	@include PageTitle
+	font-weight: 400
+@mixin FontStyles($fontStyle, $fontSize, $lineHeightInPixels, $letterSpacing)
+	font-weight: $fontStyle
+	font-size: $fontSize
+	line-height: $lineHeightInPixels
+	letter-spacing: $letterSpacing
+h1
+	@include FontStyles($fontStyle: 600, $fontSize: 32px, $lineHeightInPixels: 40px, $letterSpacing: -2%)
+h2
+	@include FontStyles($fontStyle: 500, $fontSize: 24px, $lineHeightInPixels: 32px, $letterSpacing: -2%)
+.button_text
+	@include FontStyles($fontStyle: 400, $fontSize: 14px, $lineHeightInPixels: 14px, $letterSpacing: none)
+.caption-L-medium
+	@include FontStyles($fontStyle: 500, $fontSize: 16px, $lineHeightInPixels: 20px, $letterSpacing: -2%)
+.caption-L-regular
+	@include FontStyles($fontStyle: 400, $fontSize: 16px, $lineHeightInPixels: 20px, $letterSpacing: -2%)
+.caption-L-light
+	@include FontStyles($fontStyle: 300, $fontSize: 16px, $lineHeightInPixels: 20px, $letterSpacing: -2%)
+.caption-M-medium
+	@include FontStyles($fontStyle: 500, $fontSize: 14px, $lineHeightInPixels: 18px, $letterSpacing: -2%)
+.caption-M-regular
+	@include FontStyles($fontStyle: 400, $fontSize: 14px, $lineHeightInPixels: 18px, $letterSpacing: -2%)
+.caption-M-light
+	@include FontStyles($fontStyle: 300, $fontSize: 14px, $lineHeightInPixels: 18px, $letterSpacing: -2%)
+.caption-S-regular
+	@include FontStyles($fontStyle: 400, $fontSize: 12px, $lineHeightInPixels: 14px, $letterSpacing: -2%)
+.body-semibold
+	font-family: Arial, Helvetica, sans-serif
+	@include FontStyles($fontStyle: 600, $fontSize: 16px, $lineHeightInPixels: 24px, $letterSpacing: none)
+	paragraph-spacing: 8px
+.body-regular
+	font-family: Arial, Helvetica, sans-serif
+	@include FontStyles($fontStyle: 400, $fontSize: 16px, $lineHeightInPixels: 24px, $letterSpacing: none)
+	paragraph-spacing: 8px
+//иконки сервисные
+.search:hover,.bookmarks:hover,.notifications:hover,.download:hover,.eye-opened:hover,.eye-closed:hover,.settings:hover,.delete:hover
+	path:nth-child(1)
+		fill: $picked
+.search_active,.bookmarks_active,.notifications_active,.download_active,.search:active,.bookmarks:active,.notifications:active,.download:active,
+	path:nth-child(1)
+		fill: $active
+.qa:hover
+	fill: $picked
+.qa:active, .qa_active
+	fill: $picked
+//маркетинговые иконки
+.shoes:hover,.shoes_active,.shoes:active
+	path:nth-child(2)
+		fill: $active
+.plant:hover,.plant_active
+	path:nth-child(2)
+		fill: $activeIcons
+.event:hover,.event_active,.event:active
+	path:nth-child(2)
+		fill: $active
+	path:nth-child(3)
+		fill: $activeIcons
+.dollar:hover,.dollar_active,.dollar:active
+	path:nth-child(2)
+		fill: $active
+	path:nth-child(3)
+		fill: $activeIcons
+.shirt:hover, .shirt_active, .shirt:active
+	path:nth-child(2)
+		fill: $active
+	path:nth-child(3)
+		fill: $active
+	path:nth-child(4)
+		fill: #FFA458
+	path:nth-child(5)
+		fill: $active
+	path:nth-child(6)
+		fill: $activeIcons
+	path:nth-child(10)
+		fill: #FFA458
+//марджины
+.mb-12
+	margin-bottom: 12px
+.mb-16
+	margin-bottom: 16px
+.mb-20
+	margin-bottom: 20px
+.mb-24
+	margin-bottom: 24px
+.mb-28
+	margin-bottom: 28px
+//стили для 1920
+@media screen and (min-width: 1920px)
+	.button_acc:hover
+		@include Button($hover, 20px)
+	.button_acc
+		@include Button($active, 20px)
+	.button_acc:disable
+		@include Button($picked, 20px)
+	.button_alt
+		@include Button($white, 20px)
+		border-color: $active
+	.button_alt:hover
+		@include Button($hover, 20px)
+		border-color: $active
+	.button_alt:disable
+		@include Button($white, 20px)
+		border-color: $picked
+	.button_sec
+		@include Button($darkgreyTwo, 20px)
+	.button_sec:hover
+		@include Button($lightgrey, 20px)
+	.button_sec:disable
+		@include Button($darkgreyOne, 20px)
+	.button_ghost
+		@include Button(none, 20px)
+	.button_withicon
+		@include Button($active, 20px)
+	h1
+		@include FontStyles($fontStyle: 600, $fontSize: 36px, $lineHeightInPixels: 44px, $letterSpacing: -2%)
+	h2
+		@include FontStyles($fontStyle: 500, $fontSize: 32px, $lineHeightInPixels: 40px, $letterSpacing: -2%)
+	.button_text
+		@include FontStyles($fontStyle: 400, $fontSize: 18px, $lineHeightInPixels: 20px, $letterSpacing: none)
+	.caption-L-medium
+		@include FontStyles($fontStyle: 500, $fontSize: 18px, $lineHeightInPixels: 24px, $letterSpacing: -2%)
+	.caption-L-regular
+		@include FontStyles($fontStyle: 400, $fontSize: 18px, $lineHeightInPixels: 24px, $letterSpacing: -2%)
+	.caption-L-light
+		@include FontStyles($fontStyle: 300, $fontSize: 18px, $lineHeightInPixels: 24px, $letterSpacing: -2%)
+	.caption-M-medium
+		@include FontStyles($fontStyle: 500, $fontSize: 16px, $lineHeightInPixels: 20px, $letterSpacing: -2%)
+	.caption-M-regular
+		@include FontStyles($fontStyle: 400, $fontSize: 16px, $lineHeightInPixels: 20px, $letterSpacing: -2%)
+	.caption-M-light
+		@include FontStyles($fontStyle: 300, $fontSize: 16px, $lineHeightInPixels: 20px, $letterSpacing: -2%)
+	.caption-S-regular
+		@include FontStyles($fontStyle: 400, $fontSize: 14px, $lineHeightInPixels: 16px, $letterSpacing: -2%)
+	.body-semibold
+		font-family: Arial, Helvetica, sans-serif
+		@include FontStyles($fontStyle: 600, $fontSize: 18px, $lineHeightInPixels: 26px, $letterSpacing: none)
+		paragraph-spacing: 8px
+	.body-regular
+		font-family: Arial, Helvetica, sans-serif
+		@include FontStyles($fontStyle: 400, $fontSize: 18px, $lineHeightInPixels: 26px, $letterSpacing: none)
+		paragraph-spacing: 8px
