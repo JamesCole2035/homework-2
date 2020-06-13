@@ -101,7 +101,7 @@ body
     width: calc(100% - 28px)
     height: auto
     margin-left: 28px
-.button
+.content__buttons > .button
     margin-right: 16px
 .content__blocks
     width: calc(100% - 28px - 34px)
@@ -127,6 +127,8 @@ body
     padding: 24px
     border: 1px solid $grey
     background-color: $lightgrey
+.article_withoutback
+    background-color: inherit
 .article__block
     margin-left: 12px
 .article__text
@@ -147,11 +149,13 @@ body
     width: calc(100% - 28px)
     margin-left: 28px
 .footer__links
-    margin-left: 32px
-    width: auto
+    display: flex
+    flex-direction: row    
+    margin-left: 32px  
+    margin-right: 0
 .footer__link:last-child
     margin-left: 12px
 .footer__mail
+    display: flex
+    flex-direction: row
     margin-left: 32px
-    width: auto
-    height: 18px
