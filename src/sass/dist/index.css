@@ -206,6 +206,15 @@ body {
   margin-bottom: 8px;
 }
 
+.button__image {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top: 3px;
+  line-height: 18px;
+  padding-top: 10px;
+}
+
 .footer {
   padding-top: 20px;
   padding-bottom: 22px;
@@ -238,13 +247,4 @@ body {
   display: flex;
   flex-direction: row;
   margin-left: 32px;
-}
-
-.button__image {
-  height: 18px;
-  width: 18px;
-  position: relative;
-  top: 3px;
-  line-height: 18px;
-  padding-top: 10px;
 }
