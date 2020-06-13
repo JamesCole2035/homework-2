@@ -34,6 +34,7 @@ body {
 .sidebar__link {
   height: 48px;
   width: 48px;
+  padding-top: 5px;
 }
 
 .sidebar__menu {
@@ -202,6 +203,7 @@ body {
 
 .article__title {
   margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .footer {
@@ -216,6 +218,7 @@ body {
 .footer__info {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: calc(100% - 28px);
   margin-left: 28px;
 }
