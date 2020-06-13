@@ -24,6 +24,8 @@ body {
 
 .sidebar__logo {
   display: flex;
+  flex-direction: row;
+  margin: auto;
   height: 60px;
   width: 48px;
   border-bottom: 1px solid #DDDDDD;
@@ -109,6 +111,7 @@ body {
 
 .header__title {
   width: 40%;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
 }
@@ -121,6 +124,7 @@ body {
 
 .header__icons {
   width: 120px;
+  margin-top: 20px;
   margin-right: 34px;
   display: flex;
   flex-direction: row;

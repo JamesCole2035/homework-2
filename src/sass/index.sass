@@ -23,6 +23,8 @@ body
     box-sizing: border-box
 .sidebar__logo
     display: flex
+    flex-direction: row
+    margin: auto
     height: 60px
     width: 48px
     border-bottom: 1px solid $grey
@@ -72,12 +74,13 @@ body
     box-sizing: border-box
 .header__menu
     display: flex
-    flex-direction: row
+    flex-direction: row    
     margin-left: 28px
     width: calc(100% - 28px)
     justify-content: space-between
 .header__title
     width: 40%
+    margin-top: 20px
     display: flex
     flex-direction: row
 .page-separator
@@ -86,6 +89,7 @@ body
     margin: auto 0
 .header__icons
     width: 120px
+    margin-top: 20px
     margin-right: 34px
     display: flex
     flex-direction: row

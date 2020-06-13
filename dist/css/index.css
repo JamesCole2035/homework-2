@@ -34,6 +34,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
   height: 60px;
   width: 48px;
   border-bottom: 1px solid #DDDDDD;
@@ -156,6 +161,7 @@ body {
 
 .header__title {
   width: 40%;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +179,7 @@ body {
 
 .header__icons {
   width: 120px;
+  margin-top: 20px;
   margin-right: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
