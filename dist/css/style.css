@@ -5,6 +5,7 @@
 .button {
   font-size: 14px;
   line-height: 14px;
+  color: #222222;
 }
 
 .button_acc {
@@ -319,6 +320,18 @@ h2 {
 
 .mb-28 {
   margin-bottom: 28px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.ml-28 {
+  margin-left: 28px;
+}
+
+.ml-32 {
+  margin-left: 32px;
 }
 
 @media screen and (min-width: 1920px) {
