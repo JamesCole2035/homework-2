@@ -1,5 +1,5 @@
 * {
-  font-family: Montserrat;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
 
 .button {
@@ -221,7 +221,6 @@ h2 {
 }
 
 .body-semibold {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -230,7 +229,6 @@ h2 {
 }
 
 .body-regular {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -262,19 +260,11 @@ h2 {
   fill: #FFE258;
 }
 
-.event:hover path:nth-child(2), .event_active path:nth-child(2), .event:active path:nth-child(2) {
+.event:hover path:nth-child(2), .event_active path:nth-child(2), .event:active path:nth-child(2), .dollar:hover path:nth-child(2), .dollar_active path:nth-child(2), .dollar:active path:nth-child(2) {
   fill: #FFCC66;
 }
 
-.event:hover path:nth-child(3), .event_active path:nth-child(3), .event:active path:nth-child(3) {
-  fill: #FFE258;
-}
-
-.dollar:hover path:nth-child(2), .dollar_active path:nth-child(2), .dollar:active path:nth-child(2) {
-  fill: #FFCC66;
-}
-
-.dollar:hover path:nth-child(3), .dollar_active path:nth-child(3), .dollar:active path:nth-child(3) {
+.event:hover path:nth-child(3), .event_active path:nth-child(3), .event:active path:nth-child(3), .dollar:hover path:nth-child(3), .dollar_active path:nth-child(3), .dollar:active path:nth-child(3) {
   fill: #FFE258;
 }
 
@@ -302,32 +292,92 @@ h2 {
   fill: #FFA458;
 }
 
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
+}
+
+.mb-14 {
+  margin-bottom: 14px;
 }
 
 .mb-16 {
   margin-bottom: 16px;
 }
 
+.mb-18 {
+  margin-bottom: 18px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-22 {
+  margin-bottom: 22px;
 }
 
 .mb-24 {
   margin-bottom: 24px;
 }
 
+.mb-26 {
+  margin-bottom: 26px;
+}
+
 .mb-28 {
   margin-bottom: 28px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .ml-12 {
   margin-left: 12px;
 }
 
+.ml-14 {
+  margin-left: 14px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-18 {
+  margin-left: 18px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-22 {
+  margin-left: 22px;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.ml-26 {
+  margin-left: 26px;
+}
+
 .ml-28 {
   margin-left: 28px;
+}
+
+.ml-30 {
+  margin-left: 30px;
 }
 
 .ml-32 {
@@ -487,7 +537,6 @@ h2 {
     letter-spacing: -2%;
   }
   .body-semibold {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
@@ -495,7 +544,6 @@ h2 {
     paragraph-spacing: 8px;
   }
   .body-regular {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;

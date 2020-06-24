@@ -136,6 +136,12 @@ body {
           flex-grow: 1;
 }
 
+.page-separator {
+  width: 20px;
+  text-align: center;
+  margin: auto 0;
+}
+
 .header {
   height: 60px;
   background-color: #F2F2F2;
@@ -168,12 +174,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.page-separator {
-  width: 20px;
-  text-align: center;
-  margin: auto 0;
 }
 
 .header__icons {
@@ -229,12 +229,12 @@ body {
       flex-wrap: wrap;
 }
 
-.block {
-  width: calc(50% - 10px);
-}
-
 .content__title {
   margin-top: 0;
+}
+
+.block {
+  width: calc(50% - 10px);
 }
 
 .columns {

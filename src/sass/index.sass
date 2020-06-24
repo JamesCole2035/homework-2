@@ -3,14 +3,18 @@ $darkgreyOne: #666666
 $grey: #DDDDDD
 $hover: #FFEECC
 $active: #FFCC66
+@mixin SidebarMenu($heightMenu)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: $heightMenu
 body
     margin: 0
     padding: 0
 .wrapper
     display: flex
     margin: 0
-    padding: 0
-   
+    padding: 0   
     min-width: 1366px
     max-width: 1920px
     height: 100%
@@ -22,41 +26,36 @@ body
     background-color: $lightgrey
     border-right: 1px solid $grey
     box-sizing: border-box
-.sidebar__logo
-    display: flex
-    flex-direction: row
-    margin: auto
-    height: 60px
-    width: 48px
-    border-bottom: 1px solid $grey
-.sidebar__link
-    height: 48px
-    width: 48px
-    padding-top: 5px
-@mixin SidebarMenu($heightMenu)
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    height: $heightMenu
-.sidebar__menu
-    @include SidebarMenu($heightMenu: 100%)
-.sidebar__topmenu
-    @include SidebarMenu($heightMenu: 180px)    
-    margin-top: 10px
-.sidebar__bottommenu
-    @include SidebarMenu($heightMenu: 100px)    
-    margin-bottom: 10px
-.sidebar__icon
-    display: flex
-    margin: auto
-.sidebar__items
-    display: flex
-    margin: auto
-    width: 48px
-    height: 48px
-    border-radius: 50%
-    background-color: white
-    margin: auto
+    &__logo
+        display: flex
+        flex-direction: row
+        margin: auto
+        height: 60px
+        width: 48px
+        border-bottom: 1px solid $grey
+    &__link
+        height: 48px
+        width: 48px
+        padding-top: 5px
+    &__menu
+        @include SidebarMenu($heightMenu: 100%)
+    &__topmenu
+        @include SidebarMenu($heightMenu: 180px)    
+        margin-top: 10px
+    &__bottommenu
+        @include SidebarMenu($heightMenu: 100px)    
+        margin-bottom: 10px
+    &__icon
+        display: flex
+        margin: auto
+    &__items
+        display: flex
+        margin: auto
+        width: 48px
+        height: 48px
+        border-radius: 50%
+        background-color: white
+        margin: auto
 .sidebar__items:hover,.sidebar__items_active
     box-shadow: 0px 2px 12px rgba(34, 34, 34, 0.2) 
 .sidebar__items_none
@@ -68,32 +67,32 @@ body
     width: 100%
     height: 100%
     flex-grow: 1
+.page-separator
+    width: 20px
+    text-align: center
+    margin: auto 0
 .header
     height: 60px
     background-color: $lightgrey
     border-bottom: 1px solid $grey
     box-sizing: border-box
-.header__menu
-    display: flex
-    flex-direction: row
-    width: calc(100% - 28px)
-    justify-content: space-between
-.header__title
-    width: 40%
-    margin-top: 20px
-    display: flex
-    flex-direction: row
-.page-separator
-    width: 20px
-    text-align: center
-    margin: auto 0
-.header__icons
-    width: 120px
-    margin-top: 20px
-    margin-right: 34px
-    display: flex
-    flex-direction: row
-    justify-content: space-between
+    &__menu
+        display: flex
+        flex-direction: row
+        width: calc(100% - 28px)
+        justify-content: space-between
+    &__title
+        width: 40%
+        margin-top: 20px
+        display: flex
+        flex-direction: row
+    &__icons
+        width: 120px
+        margin-top: 20px
+        margin-right: 34px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
 .icons__item
     width: 20px
     height: 20px
@@ -101,22 +100,22 @@ body
 .content
     width: 100%
     height: 100%
-.content__buttons
-    width: calc(100% - 28px)
-    height: auto
-.content__buttons > .button
-    margin-right: 16px
-.content__blocks
-    width: calc(100% - 28px - 34px)
-    height: inherit
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    flex-wrap: wrap
+    &__buttons
+        width: calc(100% - 28px)
+        height: auto
+    &__buttons > .button
+        margin-right: 16px
+    &__blocks
+        width: calc(100% - 28px - 34px)
+        height: inherit
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+    &__title
+        margin-top: 0
 .block
     width: calc(50% - 10px)
-.content__title
-    margin-top: 0
 .columns
     display: flex
     flex-direction: row
@@ -129,15 +128,15 @@ body
     padding: 24px
     border: 1px solid $grey
     background-color: $lightgrey
-.article_withoutback
-    background-color: inherit
-.article__block
-.article__text
-    font-size: 16px
-    line-height: 24px
-.article__title
-    margin-top: 0
-    margin-bottom: 8px
+    &_withoutback
+        background-color: inherit
+    &__block
+    &__text
+        font-size: 16px
+        line-height: 24px
+    &__title
+        margin-top: 0
+        margin-bottom: 8px
 .button__image
     height: 18px
     width: 18px
@@ -152,17 +151,17 @@ body
     border-top: 1px solid $grey
     background-color: $lightgrey
     margin: auto
-.footer__info
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    width: calc(100% - 28px)
-.footer__links
-    display: flex
-    flex-direction: row
-    margin-right: 0
-.footer__link:last-child
-    margin-left: 12px
-.footer__mail
-    display: flex
-    flex-direction: row
+    &__info
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        width: calc(100% - 28px)
+    &__links
+        display: flex
+        flex-direction: row
+        margin-right: 0
+    &__link:last-child
+        margin-left: 12px
+    &__mail
+        display: flex
+        flex-direction: row
