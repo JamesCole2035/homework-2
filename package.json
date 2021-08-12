@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/JamesCole2035/lesson7-homework#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cli": "^2.3.0",
